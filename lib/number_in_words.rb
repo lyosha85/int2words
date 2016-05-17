@@ -28,3 +28,5 @@ class NumberInWords
     end
   end
 end
+number_in_words = NumberInWords.new
+puts number_in_words.convert ARGV[0]
