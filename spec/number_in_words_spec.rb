@@ -19,8 +19,9 @@ describe Number, '#in_words' do
       "100" => "one hundred",
       "200" => "two hundred",
       "222" => "two hundred twenty two",
-      "155" => "one hundred fifty-five",
-      "555" => "five hundred fifty-five",
+      "155" => "one hundred fifty five",
+      "555" => "five hundred fifty five",
+      "5555" => "five thausand five hundred fifty-five",
     }.each do |input, result|
       it "converts numbers to words" do
         number = Number.new(input)
