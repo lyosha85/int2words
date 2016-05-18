@@ -5,9 +5,11 @@ describe Number, '#in_words' do
     {
       "1"   => "one",
       "3"   => "three",
+      "-3"   => "minus three",
       "6"   => "six",
       "10"   => "ten",
       "11"  => "eleven",
+      "-11"  => "minus eleven",
       "14"  => "fourteen",
       "19"  => "nineteen",
       "100" => "one hundred",

@@ -6,11 +6,17 @@ class Number
   end
 
   def in_words
+    @number, sign = check_sign(@number)
     case @number
       when 0..20
-        return NUMBERS_DICTIONARY[number]
+        return "#{sign}#{NUMBERS_DICTIONARY[@number]}"
       else
         puts 'hai'
     end
   end
+
+  def check_sign(number)
+    return number < 0 ? ([number.abs, 'minus ']) : ([number, ''])
+  end
+
 end
