@@ -1,8 +1,7 @@
 require 'spec_helper'
 require 'number_in_words'
 
-describe NumberInWords, '#convert' do
-  subject(:number_in_words) { NumberInWords.new }
+describe Number, '#in_words' do
     {
       "1"   => "one",
       "3"   => "three",
@@ -13,6 +12,9 @@ describe NumberInWords, '#convert' do
       "19"  => "nineteen",
       "100" => "one hundred",
     }.each do |input, result|
-      it { expect(number_in_words.convert input).to eq result }
+      it "converts numbers to words" do
+        number = Number.new(input)
+        expect(number.in_words).to eq result
+      end
     end
 end
