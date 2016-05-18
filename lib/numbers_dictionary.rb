@@ -1,5 +1,4 @@
 NUMBERS_DICTIONARY = {
-  0 => 'zero',
   1 => 'one',
   2 => 'two',
   3 => 'three',
@@ -21,7 +20,7 @@ NUMBERS_DICTIONARY = {
   19 => 'nineteen',
   20 => 'twenty',
   30 => 'thirty',
-  40 => 'forty',
+  40 => 'fourty',
   50 => 'fifty',
   60 => 'sixty',
   70 => 'seventy',
