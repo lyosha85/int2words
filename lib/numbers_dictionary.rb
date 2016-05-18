@@ -1,4 +1,4 @@
-NUMBERS_DICTIONARY = {
+NDIC = {
   1 => 'one',
   2 => 'two',
   3 => 'three',
