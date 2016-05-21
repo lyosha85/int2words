@@ -37,6 +37,7 @@ class Number
       div = num / 100
       @output << ONETEENS[div - 1] << " hundred "
       num -= div * 100
+      @output << "and " unless num.zero?
     end
     if num >= 20
       div = num / 10
