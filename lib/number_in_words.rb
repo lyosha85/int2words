@@ -14,7 +14,7 @@ class Number
     return 'zero' if @number.zero?
 
     thousands = Integer(Math.log10(@number) / 3)
-    magnitude = Integer(10**(3 * thousands))
+    magnitude = Integer(10**(3 * thousands) + Float::EPSILON)
 
     loop do
       div = Integer(@number / magnitude)
