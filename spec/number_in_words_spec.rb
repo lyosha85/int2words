@@ -30,6 +30,16 @@ describe Number, '#in_words' do
       "5005" => "five thousand five",
       "5500" => "five thousand five hundred",
       "5000" => "five thousand",
+      "500000" => "five hundred thousand",
+      "5000000" => "five million",
+      "50000000" => "fifty million",
+      "500000000" => "five hundred million",
+      "5000000000" => "five billion",
+      "50000000000" => "fifty billion",
+      "500000000000" => "five hundred billion",
+      "5000000000000" => "five trillion",
+      "5000000000000000" => "five quadrillion",
+      "500000000000000000" => "five hundred quadrillion",
     }.each do |input, result|
       it "converts numbers to words" do
         number = Number.new(input)
