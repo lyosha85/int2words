@@ -5,7 +5,9 @@ class Number
   THOUS = %w[thousand million billion trillion quadrillion]
 
   def initialize(number)
-    @number = Integer(number)
+    @sign = check_sign(Integer(number))
+    @number = Integer(number).abs
+    @output = ''
   end
 
   def in_words
@@ -27,7 +29,7 @@ class Number
 
 
   def check_sign(number)
-    return number < 0 ? ([number.abs, 'minus ']) : ([number, ''])
+    return number < 0 ? 'minus ' : ''
   end
 
 end
