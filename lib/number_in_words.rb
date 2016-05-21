@@ -42,7 +42,11 @@ class Number
       div = num / 10
       @output << TENS[div - 2]
       num -= div * 10
-      @output << ' '
+      if (!num.zero?)
+        @output << '-'
+      else
+        @output << ' '
+      end
     end
     @output << "#{ONETEENS[num - 1]} " unless num.zero?
   end
