@@ -1,6 +1,9 @@
-require 'numbers_dictionary'
-
 class Number
+  ONETEENS = %w[one two three four five six seven eight nine ten eleven twelve
+                thirteen fourteen fifteen sixteen seventeen eighteen nineteen]
+  TENS = %w[twenty thirty fourty fifty sixty seventy eighty ninety]
+  THOUS = %w[thousand million billion trillion quadrillion]
+
   def initialize(number)
     @number = Integer(number)
   end
