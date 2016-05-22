@@ -20,7 +20,7 @@ class Number
       div = Integer(@number / magnitude)
       wordify(div)
       break if thousands.zero?
-      @output << THOUS[thousands - 1]
+      @output << THOUS[thousands - 1] unless thousands.zero?
       @number -= div * magnitude
       break if @number.zero?
       @output << ' '
